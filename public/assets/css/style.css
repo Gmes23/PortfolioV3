@@ -297,12 +297,67 @@ a{
   margin: 5px;
 }
 
-.gmWrap{
-  width: 80vw;
-  height: 80vh;
-  border: 1px solid #ccc;
-  margin-left: 50px;
 
+.gmImgSM7{
+  height: 660.656px;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: -10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-image: url("../img/7.jpg");
+  background-size:cover;
+  background-position: center;
+  padding: 16px 32px;
+}
+
+.gmMain3Project{
+  height: 660.656px;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: -10px;
+  padding: 162px;
+  background-color: red;
+}
+
+.projectsDes{
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 300;
+}
+
+.projecstTitle{
+  font-family: Exodus-Sharp;
+  font-size: 60px;
+}
+
+
+.gmProjectsInfo{
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 100px;
+  height: 800px;
+}
+
+.gmProjectsImg{
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 100px;
+  height: 800px;
+}
+.gmWrap{
+  width: 91%;
+  height: 800px;
+  border: 1px solid #ccc;
+  margin-bottom: 100px;
+}
+
+.gmWrap2{
+  position: absolute;
+  width: 91%;
+  height: 800px;
+  border: 1px solid #ccc;
+  margin-bottom: 100px;
 }
 
 .gmButton-1{
