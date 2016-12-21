@@ -6,11 +6,13 @@
 
 html{
   -webkit-font-smoothing: antialiased;
-
 }
+
+
 a{
   color: inherit;
 }
+
 @font-face {
   font-family: Ailerons;
   src: url(./Ailerons-Typeface.otf);
@@ -141,26 +143,27 @@ a{
 
 .container-fluid{
   text-align: center;
-
 }
+
 .portLogo{
   font-family: Exodus-Striped;
   font-size: 60px;
 
 }
+
 .portdes{
   font-family: 'Sanchez', serif, italic;
   font-size: 16px;
   line-height: 70px;
   margin: 5px;
 }
+
 .gmPortshow-1{
   position: relative;
   width: 100%;
   padding-right:115px;
   padding-left: 80px;
 }
-
 
 .gmImgSM1{
   height: 360.656px;
@@ -173,16 +176,16 @@ a{
   padding: 32px 64px;
 }
 
-.gmSM1sum1{
+.gmCard{
   display: none;
+  position: relative;
   background-color: white;
   width: 100%;
   height: 100%;
-  /*-webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;*/
+  transition: all .5s ease-in-out;
 }
 
-.gmImgSM1:hover .gmSM1sum1{
+.gmImgSM1:hover>.gmCard{
   display: block;
 }
 
@@ -191,8 +194,6 @@ a{
   width: 100%;
   margin-top: 0px;
   margin-right: -10px;
-  /*-webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;*/
   background-image: url("../img/3.jpg");
   background-size:cover;
   background-position: center;
