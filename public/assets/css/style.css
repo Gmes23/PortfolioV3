@@ -29,7 +29,41 @@ a{
   font-family: Exodus-Striped;
   src: url(./Exodus-PersonalUse-Striped.otf);
 }
+@font-face {
+  font-family: Adam;
+  src: url(./ADAM.otf);
+}
 
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
 .gmMain{
   width: 100%;
@@ -43,6 +77,12 @@ a{
   font-size: 85px;
   margin: 0px;
   font-family: 'Ailerons', sans-serif;
+  white-space:nowrap;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
 }
 .gmMain>h2{
   position: absolute;
@@ -51,6 +91,11 @@ a{
   font-size: 65px;
   margin: 0px;
   font-family: 'Ailerons', sans-serif;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
 }
 
 .gmMain>h3{
@@ -60,6 +105,11 @@ a{
   font-size: 40px;
   margin: 0px;
   font-family: 'Nunito Sans', sans-serif;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
 }
 
 .gmNav{
@@ -165,8 +215,25 @@ a{
   padding-left: 80px;
 }
 
+.gmInnerText{
+  height: 100%;
+  width: 100%;
+  padding: 15%;
+  font-family: Adam;
+  letter-spacing: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.gmInnerDes{
+  font-family: Exodus Regurlar;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
 .gmImgSM1{
-  height: 360.656px;
+  height: 360px;
   width: 100%;
   margin-top: 0px;
   margin-right: -10px;
@@ -176,45 +243,111 @@ a{
   padding: 32px 64px;
 }
 
-.gmCard{
+.gmCard1{
   display: none;
   position: relative;
   background-color: white;
   width: 100%;
   height: 100%;
-  transition: all .5s ease-in-out;
+  z-index: 10;
 }
 
-.gmImgSM1:hover>.gmCard{
+.gmCard2{
+  display: none;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.gmCard3{
+  display: none;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.gmCard4{
+  display: none;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.gmCard5{
+  display: none;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.gmCard6{
+  display: none;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.gmImgSM1:hover>.gmCard1{
   display: block;
+  -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein .5s; /* Firefox < 16 */
+      -ms-animation: fadein .5s; /* Internet Explorer */
+       -o-animation: fadein .5s; /* Opera < 12.1 */
+          animation: fadein .5s;
 }
 
 .gmImgSM2{
-  height: 360.656px;
+  height: 360px;
   width: 100%;
   margin-top: 0px;
   margin-right: -10px;
   background-image: url("../img/3.jpg");
   background-size:cover;
-  background-position: center;
-  padding: 16px 32px;
+  padding: 32px 64px;padding: 32px 64px;
 }
 
+
+.gmImgSM2:hover>.gmCard2{
+  display: block;
+  -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein .5s; /* Firefox < 16 */
+      -ms-animation: fadein .5s; /* Internet Explorer */
+       -o-animation: fadein .5s; /* Opera < 12.1 */
+          animation: fadein .5s;
+}
+
+
 .gmImgSM3{
-  height: 360.656px;
+  height: 360px;
   width: 100%;
   margin-top: 0px;
   margin-right: -10px;
-  /*-webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;*/
   background-image: url("../img/2.jpg");
   background-size:cover;
   background-position: center;
-  padding: 16px 32px;
+  padding: 32px 64px;
+}
+
+.gmImgSM3:hover>.gmCard3{
+  display: block;
+  -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein .5s; /* Firefox < 16 */
+      -ms-animation: fadein .5s; /* Internet Explorer */
+       -o-animation: fadein .5s; /* Opera < 12.1 */
+          animation: fadein .5s;
 }
 
 .gmImgSM4{
-  height: 360.656px;
+  height: 360px;
   width: 100%;
   margin-top: 0px;
   margin-right: -10px;
@@ -223,11 +356,20 @@ a{
   background-image: url("../img/1.jpg");
   background-size:cover;
   background-position: center;
-  padding: 16px 32px;
+padding: 32px 64px;
+}
+
+.gmImgSM4:hover>.gmCard4{
+  display: block;
+  -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein .5s; /* Firefox < 16 */
+      -ms-animation: fadein .5s; /* Internet Explorer */
+       -o-animation: fadein .5s; /* Opera < 12.1 */
+          animation: fadein .5s;
 }
 
 .gmImgSM5{
-  height: 360.656px;
+  height: 360px;
   width: 100%;
   margin-top: 0px;
   margin-right: -10px;
@@ -236,11 +378,20 @@ a{
   background-image: url("../img/6.jpg");
   background-size:cover;
   background-position: center;
-  padding: 16px 32px;
+  padding: 32px 64px;
+}
+
+.gmImgSM5:hover>.gmCard5{
+  display: block;
+  -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein .5s; /* Firefox < 16 */
+      -ms-animation: fadein .5s; /* Internet Explorer */
+       -o-animation: fadein .5s; /* Opera < 12.1 */
+          animation: fadein .5s;
 }
 
 .gmImgSM6{
-  height: 360.656px;
+  height: 360px;
   width: 100%;
   margin-top: 0px;
   margin-right: -10px;
@@ -249,9 +400,17 @@ a{
   background-image: url("../img/7.jpg");
   background-size:cover;
   background-position: center;
-  padding: 16px 32px;
+  padding: 32px 64px;
 }
 
+.gmImgSM6:hover>.gmCard6{
+  display: block;
+  -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein .5s; /* Firefox < 16 */
+      -ms-animation: fadein .5s; /* Internet Explorer */
+       -o-animation: fadein .5s; /* Opera < 12.1 */
+          animation: fadein .5s;
+}
 .gmPortshow-1>p{
   float: right;
 }
