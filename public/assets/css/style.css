@@ -34,8 +34,6 @@ a{
   src: url(./ADAM.otf);
 }
 
-
-
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -53,16 +51,115 @@ a{
     to   { opacity: 1; }
 }
 
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+
+@-moz-keyframes slideUp {
+  from {
+      height: 0%;
+  } 60% {
+      height: 4%;
+  } 70% {
+      height: 8%;
+  } 80% {
+      height: 12%;
+  } 90% {
+      height: 16%;
+  } 100% {
+      height: 20%;
+  }
 }
 
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@keyframes slideUp {
+  from {
+      height: 0%;
+  } 60% {
+      height: 4%;
+  } 70% {
+      height: 8%;
+  } 80% {
+      height: 12%;
+  } 90% {
+      height: 16%;
+  } 100% {
+      height: 20%;
+  }
+}
+
+@-moz-keyframes slideUp2 {
+  from {
+      height: 20%;
+  } 60% {
+      height: 30%;
+  } 70% {
+      height: 50%;
+  } 80% {
+      height: 60%;
+  } 90% {
+      height: 70%;
+  } 100% {
+      height: 80%;
+  }
+}
+
+@keyframes slideUp2 {
+  from {
+      height: 20%;
+  } 60% {
+      height: 30%;
+  } 70% {
+      height: 50%;
+  } 80% {
+      height: 60%;
+  } 90% {
+      height: 70%;
+  } 100% {
+      height: 80%;
+  }
+}
+
+.gmMenuBot.open3{
+  height: 20%;
+  z-index: 1000;
+  -webkit-animation: slideUp .2s;
+  -moz-animation: slideUp 2s; /* Firefox < 16 */
+}
+
+.gmMenuTop.open2{
+  display: block;
+  height: 80%;
+  z-index: 1000;
+  -webkit-animation: slideUp2 .2s;
+  -moz-animation: slideUp2 2s; /* Firefox < 16 */
+}
+
+.gmskills{
+  font-size: 60px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+.gmMenuTop {
+  display: none;
+  position: fixed;
+  padding-top: 10%;
+  bottom: 20%;
+  left: 0px;
+  width: 80%;
+  height: 0%;
+  background-color: rgb(253,242,236);
+  font-family: Ailerons;
+  font-size: 80px;
+  text-align: center;
+  color: rgb(144,100,91);
+  z-index: 1000;
+
+}
+
+.gmMenuBot {
+  position: fixed;
+  bottom: 0px;
+  height: 0%;
+  background-color: rgb(86,99,108);
+  width: 80%;
+
 }
 
 .gmMain{
@@ -123,11 +220,14 @@ a{
   font-family: 'Nunito Sans', sans-serif;
   border: 1px solid #ccc;
   transition: width .5s;
+  background-color: white;
 }
 
 .gmNav.open{
   width: 20%;
 }
+
+
 .gmNav>ul>li{
   list-style: none;
 
@@ -228,7 +328,7 @@ a{
   font-family: Exodus Regurlar;
   font-size: 14px;
   letter-spacing: 1px;
-  margin-top: 10px;
+  margin-top: 22px;
   font-weight: normal;
 }
 
