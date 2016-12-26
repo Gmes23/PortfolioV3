@@ -332,16 +332,6 @@ a{
   font-weight: normal;
 }
 
-.gmImgSM1{
-  height: 360px;
-  width: 100%;
-  margin-top: 0px;
-  margin-right: -10px;
-  background-image: url("../img/4.jpg");
-  background-size:cover;
-  background-position: center;
-  padding: 32px 64px;
-}
 
 .gmCard1{
   display: none;
@@ -404,9 +394,19 @@ a{
        -o-animation: fadein .5s; /* Opera < 12.1 */
           animation: fadein .5s;
 }
+.gmImgSM1{
+  height: 300px;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: -10px;
+  background-image: url("../img/4.jpg");
+  background-size:cover;
+  background-position: center;
+  padding: 32px 64px;
+}
 
 .gmImgSM2{
-  height: 360px;
+  height: 300px;
   width: 100%;
   margin-top: 0px;
   margin-right: -10px;
@@ -427,7 +427,7 @@ a{
 
 
 .gmImgSM3{
-  height: 360px;
+  height: 300px;
   width: 100%;
   margin-top: 0px;
   margin-right: -10px;
@@ -447,7 +447,7 @@ a{
 }
 
 .gmImgSM4{
-  height: 360px;
+  height: 300px;
   width: 100%;
   margin-top: 0px;
   margin-right: -10px;
@@ -469,7 +469,7 @@ padding: 32px 64px;
 }
 
 .gmImgSM5{
-  height: 360px;
+  height: 300px;
   width: 100%;
   margin-top: 0px;
   margin-right: -10px;
@@ -491,7 +491,7 @@ padding: 32px 64px;
 }
 
 .gmImgSM6{
-  height: 360px;
+  height: 300px;
   width: 100%;
   margin-top: 0px;
   margin-right: -10px;
